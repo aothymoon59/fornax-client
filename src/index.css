@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* import montserrat font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+/* import manrope font  */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+.dark-bg {
+  background-color: #021224;
+}
+
+.common-btn {
+  @apply font-bold text-base border border-[#FFC000] bg-[#FFC000] rounded-xl py-[10px] px-[18px] text-black leading-[19.5px] transition-all duration-300 ease-in-out
+}
+
+.common-btn:hover {
+  @apply bg-transparent text-white
+}
+
+.login-btn {
+  @apply font-bold text-base bg-[#FFC00026] rounded-xl py-[11px] px-[20px] text-[#FFC000] leading-[19.5px] transition-all duration-300 ease-in-out
+}
+
+.login-btn:hover {
+  @apply text-white
+}
+
+
+/* .outline-btn {
+  @apply font-bold text-xl border border-[#F7A582] rounded-md py-4 px-6 text-[#F7A582] transition-all duration-300 ease-in-out
+}
+
+.outline-btn:hover {
+  @apply bg-[#F7A582] text-white
+} */
