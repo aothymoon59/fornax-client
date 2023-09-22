@@ -6,7 +6,7 @@ export default {
       screens: {
         sm: "640px", // Custom breakpoint for screens >= 640px
         md: "968px", // Custom breakpoint for screens >= 968px
-        lg: "1440px", // Custom breakpoint for screens >= 1440px
+        lg: "1280px", // Custom breakpoint for screens >= 1440px
       },
     },
   },

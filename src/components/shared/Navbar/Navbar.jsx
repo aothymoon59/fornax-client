@@ -50,15 +50,15 @@ const Navbar = () => {
     return (
         <div className="w-full dark-bg z-50">
             <Container>
-                <div className="navbar px-0 h-24 justify-between">
+                <div className="navbar px-0 justify-between min-h-min">
                     <div className="flex-start">
                         <Link to="/">
-                            <img src={logo1} alt="Logo" />
+                            <img className="min-w-[110px] lg:min-w-[150px]" src={logo1} alt="Logo" />
                         </Link>
                     </div>
                     <div className="navbar-center hidden md:flex">
                         {/* large device menu items  */}
-                        <ul className="menu menu-horizontal px-1 uppercase">
+                        <ul className="menu menu-horizontal lg:px-5 uppercase">
                             <li>
                                 <NavLink
                                     to="/"
@@ -252,7 +252,7 @@ const Navbar = () => {
                                 </ul>}
                         </div>
                     </div>
-                    <div className="flex-end gap-5 font-montserrat hidden md:flex">
+                    <div className="flex-end gap-2 lg:gap-5 font-montserrat hidden md:flex">
                         {/* currency change  */}
                         <select className="default">
                             <option value='usd'>USD $</option>

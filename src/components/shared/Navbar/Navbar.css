@@ -19,7 +19,7 @@
 }
 
 .lg-dropdown .dropdown-content {
-    top: 45px;
+    top: 55px;
     left: 50%;
     margin-left: -125px;
 }
@@ -37,4 +37,36 @@
     border-radius: 5px;
     border-left-color: #102642;
     transform: rotate(135deg);
+}
+
+.menu-horizontal>li>a,
+.lg-dropdown {
+    padding: 20px 10px;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .menu-horizontal>li>a,
+    .lg-dropdown {
+        padding: 20px 5px;
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .menu-horizontal>li>a,
+    .lg-dropdown {
+        padding: 20px 3px;
+        margin: 0 5px;
+    }
+
+
+    a.login-btn,
+    a.common-btn,
+    .menu-horizontal li a,
+    .lg-dropdown {
+        font-size: 12px;
+    }
 }
