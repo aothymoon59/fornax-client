@@ -18,13 +18,13 @@
     color: #FFC000 !important;
 }
 
-.dropdown .dropdown-content {
+.lg-dropdown .dropdown-content {
     top: 45px;
     left: 50%;
     margin-left: -125px;
 }
 
-.dropdown ul:before {
+.lg-dropdown ul:before {
     position: absolute;
     top: -8px;
     left: 0;
