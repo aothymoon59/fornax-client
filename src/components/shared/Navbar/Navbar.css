@@ -1,18 +1,9 @@
-/* .default {
-    @apply font-medium tracking-wide text-[#49658A] bg-transparent
-}
-
-.active {
-    @apply font-medium tracking-wide text-[#1d4ed8] bg-transparent
-} */
-
 .active {
     /* letter-spacing: 0.025em !important; */
-    font-weight: 800;
+    font-weight: 700;
     color: #FFC000 !important;
     background-color: transparent !important;
     font-size: 14px;
-    /* line-height: 19.12px; */
 }
 
 .default {
@@ -21,5 +12,29 @@
     color: #49658A !important;
     background-color: transparent !important;
     font-size: 14px;
-    /* line-height: 17.07px; */
+}
+
+.default:hover {
+    color: #FFC000 !important;
+}
+
+.dropdown .dropdown-content {
+    top: 45px;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.dropdown ul:before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    content: "";
+    border: 10px solid transparent;
+    margin: 0 auto;
+    border-bottom-color: #102642 !important;
+    bottom: auto;
+    border-radius: 5px;
+    border-left-color: #102642;
+    transform: rotate(135deg);
 }

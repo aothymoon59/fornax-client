@@ -7,6 +7,11 @@
 /* import manrope font  */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
+/* prevent all select tag focus visible outline */
+select:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }

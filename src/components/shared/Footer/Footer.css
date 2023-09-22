@@ -1,0 +1,3 @@
+.footer-title-cs {
+    @apply text-xl font-bold leading-[30px] text-white text-left
+}

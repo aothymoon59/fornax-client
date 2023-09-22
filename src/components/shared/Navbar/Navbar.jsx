@@ -6,14 +6,14 @@ import aboutIcon from '../../../assets/navbar/about-us.png'
 import teamIcon from '../../../assets/navbar/Team.png'
 import './Navbar.css'
 
-// TODO: responsive needed for small device 
+// TODO: responsive needed for small device
 
 const Navbar = () => {
 
     return (
         <div className="w-full dark-bg z-50">
             <Container>
-                <div className="navbar py-5">
+                <div className="navbar h-24">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -115,6 +115,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
+                        {/* large device menu items  */}
                         <ul className="menu menu-horizontal px-1 uppercase">
                             <li>
                                 <NavLink
@@ -167,10 +168,10 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                             {/* large device about us  */}
-                            <li tabIndex={0} className="hidden lg:block">
-                                <details>
-                                    <summary className="default">About Us</summary>
-                                    <ul className="p-[10px] rounded-xl bg-[#102642] w-[250px]">
+                            <li>
+                                <div className="dropdown dropdown-hover">
+                                    <label tabIndex={0} className="default">About Us</label>
+                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-[10px] rounded-xl bg-[#102642] w-[250px] top-[35px] left-[-7px]">
                                         <li>
                                             <Link to='/about-us' aria-label="About Us" title="Fornax or non-fungible tokens, are unique and irreplaceable" className='px-[10px] py-4 hover:bg-[#1D375899] rounded-[10px] flex items-center gap-[10px]'>
                                                 <img src={aboutIcon} alt="About Icon" />
@@ -190,7 +191,7 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                     </ul>
-                                </details>
+                                </div>
                             </li>
                         </ul>
                     </div>
